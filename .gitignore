@@ -1,5 +1,13 @@
+# Relate to DataSet file
 *.jpg
 *.txt
 *.tgz
 
 *.pt
+*.tgz
+
+Segmentation/benchmark_RELEASE/*
+Segmentation/cls/*
+Segmentation/img/*
+Segmentation/inst/*
+Segmentation/results/*
