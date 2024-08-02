@@ -2,12 +2,18 @@
 *.jpg
 *.txt
 *.tgz
+*.zip
 
 *.pt
-*.tgz
 
 Segmentation/benchmark_RELEASE/*
 Segmentation/cls/*
 Segmentation/img/*
 Segmentation/inst/*
 Segmentation/results/*
+
+Detection/annotations/*
+Detection/images/*
+Detection/test_annotations/*
+Detection/test_images/*
+Detection/dataset*
