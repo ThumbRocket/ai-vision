@@ -1,5 +1,4 @@
 # Relate to DataSet file
-*.jpg
 *.txt
 *.tgz
 *.zip
@@ -17,3 +16,5 @@ Detection/images/*
 Detection/test_annotations/*
 Detection/test_images/*
 Detection/dataset*
+
+3D_Reconstruction/output/*
