@@ -26,3 +26,15 @@ In this notebook, we show a demo of DETR (Detection Transformer), with slight di
 In this notebook, we show-case how to use the pre-trained DETR models that we provide to make predictions and visualize the attentions of the model to gain insights on the way it sees the images.
 ### inference_for_YOLOv5.ipynb
 we inference object using YOLOv5 pretrained model. and we compare slice inference with a YOLOv5 Model.
+
+# 3D_Reconstruction
+### homography.ipynb
+In this notebook, explain Homography estimation using DLT 
+### panorama.ipynb
+This notebooks is Using DLT to compute homography from correspondences, and execute RANSAC(Random Sample Consensus) to find the homography which has largest correspondences (inliers) and genrate Panorama Image
+### camera_model.ipynb
+Thos notebook is to understand camera model, and make to create a renderer
+### Triangulation.ipynb
+In this notebook, we will triangulate facial landmarks of multiview face images, using landmarks acquired by Face-Alignment package.
+### calibration_sfm_nerf_shared.ipynb
+In here, implement the camera calibration process using Zhang's method.
