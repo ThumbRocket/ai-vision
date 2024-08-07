@@ -1,10 +1,4 @@
 # Relate to DataSet file
-*.txt
-*.tgz
-*.zip
-
-*.pt
-
 Segmentation/benchmark_RELEASE/*
 Segmentation/cls/*
 Segmentation/img/*
