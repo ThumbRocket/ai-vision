@@ -43,10 +43,11 @@ def main(config):
             evaluator.add_error(loss.item())
             
             # visualize
-            img_input = cv2.cvtColor(img[0].permute(1, 2, 0).numpy(), cv2.COLOR_RGB2BGR)
-            pred_normalized = np.ones_like(pred)
-            pred_normalized[:, 0] = pred[:, 0] / pred[:, 1] # normalize by G
-            pred_normalized[:, 2] = pred[:, 2] / pred[:, 1] # normalize by G
+            img_input = cv2.cvtColor(img[0].permute(1, 2, 0).cpu().numpy(), cv2.COLOR_RGB2BGR)
+            cpred=pred.cpu()
+            pred_normalized = np.ones_like(cpred)
+            pred_normalized[:, 0] = cpred[:, 0] / cpred[:, 1] # normalize by G
+            pred_normalized[:, 2] = cpred[:, 2] / cpred[:, 1] # normalize by G
             img_wb = img_input / pred_normalized
             img_wb = img_wb
             place_name = file_name[0].split('.')[0]

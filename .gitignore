@@ -1,3 +1,5 @@
+**/__pycache__/
+
 # Relate to DataSet file
 Segmentation/benchmark_RELEASE/*
 Segmentation/cls/*

@@ -8,12 +8,11 @@ def gray_world(img):
     IN: input img => shape: (256, 256, 3)
     OUT: white balanced img => shape: (256, 256, 3)
     """
-    
-    # Write your code here!
-
-
-    return 
-
+    img = img.transpose(2, 0, 1).astype(np.uint32) # (256, 256, 3) => (3, 256, 256)
+    mu_g = np.average(img[1]) # Avg of G channel
+    img[0] = np.minimum(img[0]*(mu_g/np.average(img[0])),1023) # R = R * G_avg/R_avg
+    img[2] = np.minimum(img[2]*(mu_g/np.average(img[2])),1023) # B = B * G_avg/B_avg
+    return  img.transpose(1, 2, 0).astype(np.uint16) # (3, 256, 256) => (256, 256, 3)
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
