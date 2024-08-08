@@ -40,6 +40,7 @@ In this notebook, we will triangulate facial landmarks of multiview face images,
 In here, implement the camera calibration process using Zhang's method.
 
 # Computational_Photography
+### _wb : White Balance_
 ### `./wb/gray_world`
 It is implemented grey world algorithm. moving grey world folder, you can run grey algorithm.
 ```bash
@@ -66,4 +67,44 @@ It is implemented LSMI data generation. LSMI data generation is A method of crea
 ```bash
 cd ./Computational_Phtography/wb/LSMI_data_generation
 python ./LSMI_data_gen_toy.py # script run
+```
+
+### `./wb/hdrnet`
+It is implemented white balance using hdrnet.
+```bash
+cd ./Computational_Phtography/wb/hdrnet
+python ./python test.py --dataset ./data_sample/ --ckpt ch/pretrained_model.pth --bit-depth 10 --net-input-size 128 --net-output-size 256 # script run
+```
+
+
+
+### `./wb/unet`
+It is implemented white balance using UNet.
+```bash
+cd ./Computational_Phtography/wb/unet
+python main.py --mode test --data_root data_sample/ --model_root checkpoint/ --checkpoint pretrained_unet/model.pt --output_type illumination --save_result 'yes' # script run
+```
+
+### _sr : Super Resolution_
+### `./sr/interpolation`
+In this code, implemented free SR on Classical Training
+```bash
+cd ./Computational_Phtography/sr/interpolation
+python ./interpolation.py # script run
+```
+
+### `./sr/deep_sr`
+In this code, implemented Enhanced Deep Residual Network
+```bash
+cd ./Computational_Phtography/sr/deep_sr
+pip install -r requirements.txt
+python test_edsr.py --config configs/test_edsr-baseline-multi.yaml # script run
+```
+
+### `./sr/deep_sr`
+In this code, implemented Local Implicit Image Function
+```bash
+cd ./Computational_Phtography/sr/deep_sr
+pip install -r requirements.txt
+python test_liif.py --config configs/test_edsr-baseline-liif.yaml # script run
 ```

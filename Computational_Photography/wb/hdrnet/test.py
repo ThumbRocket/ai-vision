@@ -36,17 +36,9 @@ if __name__ == '__main__':
     state_dict = torch.load(params['ckpt'])
     state_dict, model_params = load_params(state_dict)
 
-    # if torch.cuda.is_available():
-    #     device = torch.device("cuda")
-    #     print("Run on CUDA")
-    # else:
-    #     device = torch.device("cpu")
-    #     print("Run on CPU")
-    device = torch.device("cpu")
-    print("Run on CPU")
+    device = torch.device("cuda")
     
     max_value = 2 ** params['bit_depth'] - 1
-
     test_mae_list = []
     test_mae_illum_list = []
     test_psnr_list = []
