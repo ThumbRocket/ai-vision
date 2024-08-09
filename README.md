@@ -38,6 +38,8 @@ Thos notebook is to understand camera model, and make to create a renderer
 In this notebook, we will triangulate facial landmarks of multiview face images, using landmarks acquired by Face-Alignment package.
 ### `calibration_sfm_nerf_shared.ipynb`
 In here, implement the camera calibration process using Zhang's method.
+### `3D_Reconstruction.ipynb`
+In here, implement Dense 3D Reconstruction and Volumetric Surface Reconstruction.
 
 # Computational_Photography
 ### _wb : White Balance_
