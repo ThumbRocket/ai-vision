@@ -40,6 +40,10 @@ In this notebook, we will triangulate facial landmarks of multiview face images,
 In here, implement the camera calibration process using Zhang's method.
 ### `3D_Reconstruction.ipynb`
 In here, implement Dense 3D Reconstruction and Volumetric Surface Reconstruction.
+### `SMPL.ipynb`
+In here, implement SMPL what is a statistical template model of naked human body.
+### `PIFuHD.ipynb`
+In here, implement PIFuHD model.
 
 # Computational_Photography
 ### _wb : White Balance_
