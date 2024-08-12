@@ -114,3 +114,10 @@ cd ./Computational_Phtography/sr/deep_sr
 pip install -r requirements.txt
 python test_liif.py --config configs/test_edsr-baseline-liif.yaml # script run
 ```
+# Motion tracking
+### `Optical_flow_LK.ipynb`
+In this notebook, The Lucas-Kanade Optical Flow for Optical Flow estimation has been implemented.
+### `Optical_flow_RAFT.ipynb`
+In this notebook, RAFT(Recurruent All-pairs Field Transfomers for Optical Flow Estimation) using Deep Learning has been implemented.
+### `Dense_Optical_Tracking.ipynb`
+In this notebook, Dense Optical Tracking calculates the motion of every pixel in an image sequence, providing a comprehensive motion field. It is useful in applications like video stabilization and motion detection, offering detailed motion information across the entire image.
