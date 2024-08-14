@@ -125,3 +125,6 @@ In this notebook, Dense Optical Tracking calculates the motion of every pixel in
 In this notebook, implement Kalman Filter. The Kalman Filter is an algorithm that estimates the state of a dynamic system by combining predictions and noisy measurements to produce an optimal estimate.
 ### `3D_Object_Tracking.ipynb`
 In this notebook, implement 3D Object Tracking notebook.
+# Action recoginition
+### `C3D_NonLocal_TSM.ipynb`
+In this notebook implement Three model on C3D Network+Non-Local Block, TSM-ResNet50 and NonLocal-ResNet50 (he C3D network with a Non-Local Block can lead to memory overflow.)
